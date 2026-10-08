@@ -1,20 +1,27 @@
-# Wamiq Siddiqui — portfolio
+# Wamiq Siddiqui — Cloud & DevOps Engineer
 
-Personal portfolio of **Wamiq Siddiqui**, DevOps / SysOps engineer in Karachi.
-Plain static site: `index.html`, `styles.css`, `main.js`. No build step.
+Portfolio website. Plain static site, no build step.
+
+| File | What it is |
+| --- | --- |
+| `index.html` | The portfolio page |
+| `styles.css` | Styles (light and dark mode) |
+| `main.js` | Theme toggle, mobile menu, active section in the nav |
+| `resume.pdf` | The CV behind the "Download CV" buttons |
+| `cv.html` | Source of `resume.pdf` |
 
 ## Run locally
-Open `index.html` in a browser, or serve the folder:
 
     python3 -m http.server 8000
 
 ## Deploy
+- **GitHub Pages:** Settings > Pages > Deploy from a branch > `main`, `/ (root)`.
 - **Vercel:** Add New > Project > import this repo > Framework preset "Other" > Deploy.
-- **GitHub Pages:** Settings > Pages > Deploy from branch > `main` / root.
 
-## Editing
-All content lives in `index.html` and comes from his current CV.
-Contact links use email and LinkedIn only; add a phone number or a downloadable
-CV (`resume.pdf` plus a link in the hero) only if Wamiq wants them public.
-After deploying to a custom domain, change `og:image` in `index.html` to the full URL
-(for example `https://example.com/og-image.png`) so link previews show the image.
+## Updating the CV
+Edit `cv.html`, open it in Chrome, press Ctrl+P, choose "Save as PDF" (A4, margins "Default",
+background graphics on) and save over `resume.pdf`.
+
+## Notes
+- After connecting a custom domain, change `og:image` in `index.html` to the full URL
+  (for example `https://wamiq.dev/og-image.png`) so WhatsApp and LinkedIn previews show the image.
